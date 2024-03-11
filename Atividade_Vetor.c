@@ -4,8 +4,6 @@ void imprimirVetor(int v[], int qtd);
 
 int main(){
 int qtd;
-int max = 0;
-int min = 0;
 printf("Informe o tamanho do vetor: ");
 scanf("%d", &qtd);
 int vetor[qtd];
@@ -16,15 +14,7 @@ for(int i = 0; i<qtd; ++i){
     printf("Informe o %dº número do vetor: ",i+1);
     scanf("%d",&vetor[i]);
 }
-for (int i = 0; i < qtd; ++i) {
-    if (vetor[i] < vetor[min]) {
-      min = i;
-    } else if (vetor[i] > vetor[max]) {
-      max = i;
-    }
-  }
-printf("O valor máximo desse vetor é %d\n", vetor[max]);
-printf("O valor minímo desse vetor é:%d\n ",vetor[min]);
+
 for(int i =0;i<qtd; ++i){
   vetor2[i]= vetor[qtd-i-1];
 }
