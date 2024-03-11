@@ -6,9 +6,7 @@ int main(){
 int qtd;
 printf("Informe o tamanho do vetor: ");
 scanf("%d", &qtd);
-int vetor[qtd];
-int vetor2[qtd];
-int tempo[qtd];
+int vetor[qtd],vetor2[qtd],tempo[qtd];
 
 for(int i = 0; i<qtd; ++i){
     printf("Informe o %dº número do vetor: ",i+1);
